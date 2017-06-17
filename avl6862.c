@@ -29,8 +29,7 @@
 
 #include "dvb_frontend.h"
 #include "avl6862.h"
-//#include "avl6882_priv.h"
-#include "avl6862_priv.h"
+#include "avl6882_priv.h"
 
 #define dbg_avl(fmt, args...) \
 	do {\
