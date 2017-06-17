@@ -260,7 +260,7 @@ static int avl6862_setup_pll(struct avl6862_priv *priv)
 }
 
 
-#define DEMOD_WAIT_RETRIES	(10)
+#define DEMOD_WAIT_RETRIES	(100)
 #define DEMOD_WAIT_MS		(20)
 static int avl6862_wait_demod(struct avl6862_priv *priv)
 {
