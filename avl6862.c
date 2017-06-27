@@ -511,7 +511,7 @@ static int avl6862_patch_demod(struct avl6862_priv *priv, u32 *patch)
 	return ret;
 }
 
-#define DEMOD_WAIT_RETRIES_BOOT	(10)
+#define DEMOD_WAIT_RETRIES_BOOT	(100)
 #define DEMOD_WAIT_MS_BOOT	(20)
 static int avl6862_wait_demod_boot(struct avl6862_priv *priv)
 {
