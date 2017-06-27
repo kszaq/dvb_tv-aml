@@ -284,11 +284,10 @@ static int avl6862_wait_demod(struct avl6862_priv *priv)
 static int avl6862_exec_n_wait(struct avl6862_priv *priv, u8 cmd)
 {
 	int ret;
-/*
+
 	ret = avl6862_wait_demod(priv);
 	if (ret)
 		return ret;
-*/
 	ret = avl6862_WR_REG16(priv, 0x200 + rc_fw_command_saddr_offset, (u32) cmd);
 	if (ret)
 		return ret;
