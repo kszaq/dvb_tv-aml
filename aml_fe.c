@@ -147,7 +147,7 @@ static int avl6862_fe_init(struct aml_dvb *advb, struct platform_device *pdev, s
 		goto err_resource;
 	}
 		
-	if (dvb_attach(r848_attach, fe->fe, &r848_config, i2c_handle) == NULL) {
+	if (dvb_attach(r848x_attach, fe->fe, &r848_config, i2c_handle) == NULL) {
 		dvb_frontend_detach(fe->fe);
 		fe->fe = NULL;
 		pr_err("r848_attach attach failed!!!\n");
