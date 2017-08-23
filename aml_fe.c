@@ -35,7 +35,7 @@
 #include "aml_fe.h"
 
 #include "avl6862.h"
-#include "r848.h"
+#include "r848a.h"
 
 #include "aml_dvb.h"
 #undef pr_err
